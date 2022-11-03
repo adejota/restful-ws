@@ -2,7 +2,7 @@
 require('dotenv').config();
 const mysqlServer = require('mysql')
 
-const connection = mysqlServer.createPool({
+const connection = mysqlServer.createConnection({
     // eslint-disable-next-line no-undef
     host: process.env.MYSQL_HOST,
     // eslint-disable-next-line no-undef
