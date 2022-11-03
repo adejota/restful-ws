@@ -4,14 +4,15 @@ const mysqlServer = require('mysql')
 
 const connection = mysqlServer.createConnection({
     // eslint-disable-next-line no-undef
-    host: 'us-cdbr-east-06.cleardb.net',
+    host: process.env.MYSQL_HOST,
     // eslint-disable-next-line no-undef
-    user: 'b723dbfcab1ae4',
+    user: process.env.MYSQL_USER,
     // eslint-disable-next-line no-undef
-    password: '992dbf57',
+    password: process.env.MYSQL_PASSWORD,
     // eslint-disable-next-line no-undef
-    database: 'heroku_4ead4a7bc445d9c',
-    port: 3306,
+    database: process.env.MYSQL_DATABASE,
+    // eslint-disable-next-line no-undef
+    port: process.env.MYSQL_PORT,
     insecureAuth : true
 })
 
