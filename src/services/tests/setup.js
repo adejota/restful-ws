@@ -3,13 +3,13 @@ const mysqlServer = require('mysql')
 
 const connection = mysqlServer.createConnection({
     // eslint-disable-next-line no-undef
-    host: process.env.MYSQL_HOST,
+    host: process.env.MYSQL_TEST_HOST,
     // eslint-disable-next-line no-undef
-    user: process.env.MYSQL_USER,
+    user: process.env.MYSQL_TEST_USER,
     // eslint-disable-next-line no-undef
-    password: process.env.MYSQL_PASSWORD,
+    password: process.env.MYSQL_TEST_PASSWORD,
     // eslint-disable-next-line no-undef
-    database: process.env.MYSQL_DATABASE
+    database: process.env.MYSQL_TEST_DATABASE
 })
 
 const errorHandler = (error, msg, rejectFunction) => {
