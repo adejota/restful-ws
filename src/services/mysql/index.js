@@ -1,5 +1,3 @@
-
-require('dotenv').config();
 const mysqlServer = require('mysql')
 
 const connection = mysqlServer.createConnection({
@@ -12,8 +10,7 @@ const connection = mysqlServer.createConnection({
     // eslint-disable-next-line no-undef
     database: process.env.MYSQL_DATABASE,
     // eslint-disable-next-line no-undef
-    port: process.env.MYSQL_PORT,
-    insecureAuth : true
+    port: process.env.MYSQL_PORT
 })
 
 const errorHandler = (error, msg, rejectFunction) => {

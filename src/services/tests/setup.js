@@ -1,4 +1,3 @@
-require('dotenv').config();
 const mysqlServer = require('mysql')
 
 const connection = mysqlServer.createConnection({
