@@ -1,4 +1,4 @@
-const db = require('../services/mysql')
+const db = require('../services')
 
 const routes = (server) => {
     server.post('/auth', async (req, res, next) => {
